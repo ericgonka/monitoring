@@ -1,20 +1,22 @@
-# Monitor de Servicios - PowerShell Script
+# Monitoring Script: Monitoreo y Reinicio Automático de Servicios en PowerShell
 
-## Descripción
+## 📜 Descripción
 
-Este script de PowerShell permite monitorear el estado de un servicio en una máquina con Windows. Su función principal es verificar periódicamente si el servicio está en ejecución. En caso de que el servicio se detenga, el script lo reinicia automáticamente y registra el evento en un archivo de log.
+**Monitoring.ps1** es un script de PowerShell diseñado para monitorear el estado de un servicio específico en tu máquina Windows. Si el servicio se detiene, el script no solo lo reinicia automáticamente, sino que también registra la caída del servicio en un archivo de log, brindándote un control total sobre el estado de tus servicios esenciales.
 
-## Requisitos
+Este script es perfecto para asegurarte de que los servicios críticos de tu sistema siempre estén activos y funcionando sin interrupciones.
 
-- PowerShell 5.1 o superior.
-- Permisos de administrador para poder gestionar servicios.
-  
-## Uso
+## 🛠 Requisitos
 
-1. **Clona o descarga este archivo de script (`monitoring.ps1`) en tu equipo.**
-2. **Ejecuta el script desde PowerShell pasando como argumento el nombre del servicio que deseas monitorear.**
+- **PowerShell 5.1 o superior**.
+- **Permisos de administrador** para gestionar servicios.
+- Conexión a Internet (si deseas realizar notificaciones o alertas externas).
 
-### Ejemplo de ejecución:
+## 🚀 Uso
+
+Para ejecutar el script, simplemente pasa el nombre del servicio que deseas monitorear como argumento.
+
+### Ejemplo:
 
 ```powershell
 .\monitoring.ps1 <nombre_servicio>
